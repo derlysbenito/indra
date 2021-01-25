@@ -3,23 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E232F109D6F75E36380D76F /* Pods_Indra_IndraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C7B12094BA4E02BA2C2FBE /* Pods_Indra_IndraUITests.framework */; };
+		31F2383E4C8AAE54B69AC1CF /* Pods_IndraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6395CE3F0157EEE52CAC78 /* Pods_IndraTests.framework */; };
+		DECAA62845299628DF5330FC /* Pods_Indra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B01D0D2C984019693F78275 /* Pods_Indra.framework */; };
 		FA2264BB25BF020300A7F018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2264BA25BF020300A7F018 /* AppDelegate.swift */; };
 		FA2264BD25BF020300A7F018 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2264BC25BF020300A7F018 /* SceneDelegate.swift */; };
-		FA2264BF25BF020300A7F018 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2264BE25BF020300A7F018 /* ViewController.swift */; };
-		FA2264C225BF020300A7F018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2264C025BF020300A7F018 /* Main.storyboard */; };
 		FA2264C525BF020400A7F018 /* Indra.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA2264C325BF020400A7F018 /* Indra.xcdatamodeld */; };
 		FA2264C725BF020900A7F018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2264C625BF020900A7F018 /* Assets.xcassets */; };
 		FA2264CA25BF020900A7F018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2264C825BF020900A7F018 /* LaunchScreen.storyboard */; };
 		FA2264D525BF020900A7F018 /* IndraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2264D425BF020900A7F018 /* IndraTests.swift */; };
 		FA2264E025BF020900A7F018 /* IndraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2264DF25BF020900A7F018 /* IndraUITests.swift */; };
-		FA2264F625BF02A900A7F018 /* DBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2264F525BF02A900A7F018 /* DBLoginViewController.swift */; };
-		FA2264F825BF03CB00A7F018 /* DBLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2264F725BF03CB00A7F018 /* DBLoginViewController.storyboard */; };
 		FA2264FD25BF090700A7F018 /* DBMoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2264FC25BF090700A7F018 /* DBMoviesTableViewController.swift */; };
 		FA2264FF25BF091E00A7F018 /* DBMoviesTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2264FE25BF091E00A7F018 /* DBMoviesTableViewController.storyboard */; };
+		FA22650625BF1A6600A7F018 /* DBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22650525BF1A6600A7F018 /* DBBaseViewController.swift */; };
+		FA22650825BF1E4000A7F018 /* DBMovieDetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22650725BF1E4000A7F018 /* DBMovieDetailCollectionViewController.swift */; };
+		FA22650B25BF203700A7F018 /* DBMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22650A25BF203700A7F018 /* DBMoviesViewModel.swift */; };
+		FA22650D25BF206E00A7F018 /* DBWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22650C25BF206E00A7F018 /* DBWebService.swift */; };
+		FA22651425BF272000A7F018 /* DBMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22651325BF272000A7F018 /* DBMovies.swift */; };
+		FA22651625BF2A6200A7F018 /* DBMoviesViewModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22651525BF2A6200A7F018 /* DBMoviesViewModelController.swift */; };
+		FA22651825BF2EFC00A7F018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA22651725BF2EFB00A7F018 /* Main.storyboard */; };
+		FA22651A25BF2F0200A7F018 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22651925BF2F0200A7F018 /* ViewController.swift */; };
+		FA22651D25BF395400A7F018 /* DBMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22651C25BF395400A7F018 /* DBMovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F2197D89CD9CA02EB55B483 /* Pods-Indra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Indra.debug.xcconfig"; path = "Target Support Files/Pods-Indra/Pods-Indra.debug.xcconfig"; sourceTree = "<group>"; };
+		2D2F212702DD14C1552A4F34 /* Pods-IndraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndraTests.release.xcconfig"; path = "Target Support Files/Pods-IndraTests/Pods-IndraTests.release.xcconfig"; sourceTree = "<group>"; };
+		74AFAFC6391952CD6039956F /* Pods-Indra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Indra.release.xcconfig"; path = "Target Support Files/Pods-Indra/Pods-Indra.release.xcconfig"; sourceTree = "<group>"; };
+		7D6395CE3F0157EEE52CAC78 /* Pods_IndraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B01D0D2C984019693F78275 /* Pods_Indra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Indra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93BBFB7B2AC5AF872BD10871 /* Pods-Indra-IndraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Indra-IndraUITests.debug.xcconfig"; path = "Target Support Files/Pods-Indra-IndraUITests/Pods-Indra-IndraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A056B0147F8FDB0B93228824 /* Pods-Indra-IndraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Indra-IndraUITests.release.xcconfig"; path = "Target Support Files/Pods-Indra-IndraUITests/Pods-Indra-IndraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B7C7B12094BA4E02BA2C2FBE /* Pods_Indra_IndraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Indra_IndraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5BF4BCCC21B0BD22D3AF0F3 /* Pods-IndraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndraTests.debug.xcconfig"; path = "Target Support Files/Pods-IndraTests/Pods-IndraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2264B725BF020300A7F018 /* Indra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Indra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2264BA25BF020300A7F018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2264BC25BF020300A7F018 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA2264BE25BF020300A7F018 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA2264C125BF020300A7F018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA2264C425BF020400A7F018 /* Indra.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Indra.xcdatamodel; sourceTree = "<group>"; };
 		FA2264C625BF020900A7F018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2264C925BF020900A7F018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,10 +70,17 @@
 		FA2264DB25BF020900A7F018 /* IndraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2264DF25BF020900A7F018 /* IndraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndraUITests.swift; sourceTree = "<group>"; };
 		FA2264E125BF020900A7F018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA2264F525BF02A900A7F018 /* DBLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBLoginViewController.swift; sourceTree = "<group>"; };
-		FA2264F725BF03CB00A7F018 /* DBLoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DBLoginViewController.storyboard; sourceTree = "<group>"; };
 		FA2264FC25BF090700A7F018 /* DBMoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMoviesTableViewController.swift; sourceTree = "<group>"; };
 		FA2264FE25BF091E00A7F018 /* DBMoviesTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DBMoviesTableViewController.storyboard; sourceTree = "<group>"; };
+		FA22650525BF1A6600A7F018 /* DBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBBaseViewController.swift; sourceTree = "<group>"; };
+		FA22650725BF1E4000A7F018 /* DBMovieDetailCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMovieDetailCollectionViewController.swift; sourceTree = "<group>"; };
+		FA22650A25BF203700A7F018 /* DBMoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMoviesViewModel.swift; sourceTree = "<group>"; };
+		FA22650C25BF206E00A7F018 /* DBWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBWebService.swift; sourceTree = "<group>"; };
+		FA22651325BF272000A7F018 /* DBMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMovies.swift; sourceTree = "<group>"; };
+		FA22651525BF2A6200A7F018 /* DBMoviesViewModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMoviesViewModelController.swift; sourceTree = "<group>"; };
+		FA22651725BF2EFB00A7F018 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FA22651925BF2F0200A7F018 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA22651C25BF395400A7F018 /* DBMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DECAA62845299628DF5330FC /* Pods_Indra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F2383E4C8AAE54B69AC1CF /* Pods_IndraTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +104,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E232F109D6F75E36380D76F /* Pods_Indra_IndraUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		287C2649C7297BEA5D081AE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F2197D89CD9CA02EB55B483 /* Pods-Indra.debug.xcconfig */,
+				74AFAFC6391952CD6039956F /* Pods-Indra.release.xcconfig */,
+				93BBFB7B2AC5AF872BD10871 /* Pods-Indra-IndraUITests.debug.xcconfig */,
+				A056B0147F8FDB0B93228824 /* Pods-Indra-IndraUITests.release.xcconfig */,
+				C5BF4BCCC21B0BD22D3AF0F3 /* Pods-IndraTests.debug.xcconfig */,
+				2D2F212702DD14C1552A4F34 /* Pods-IndraTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		767E921543C8B7B14C3E799B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B01D0D2C984019693F78275 /* Pods_Indra.framework */,
+				B7C7B12094BA4E02BA2C2FBE /* Pods_Indra_IndraUITests.framework */,
+				7D6395CE3F0157EEE52CAC78 /* Pods_IndraTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA2264AE25BF020300A7F018 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +141,8 @@
 				FA2264D325BF020900A7F018 /* IndraTests */,
 				FA2264DE25BF020900A7F018 /* IndraUITests */,
 				FA2264B825BF020300A7F018 /* Products */,
+				287C2649C7297BEA5D081AE7 /* Pods */,
+				767E921543C8B7B14C3E799B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,8 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				FA2264F225BF024800A7F018 /* Assets */,
-				FA2264EF25BF022100A7F018 /* ViewModel */,
+				FA22650925BF1FDB00A7F018 /* Manager */,
 				FA2264EE25BF021C00A7F018 /* Model */,
+				FA2264EF25BF022100A7F018 /* ViewModel */,
 				FA2264ED25BF021800A7F018 /* View */,
 				FA2264BA25BF020300A7F018 /* AppDelegate.swift */,
 				FA2264BC25BF020300A7F018 /* SceneDelegate.swift */,
@@ -143,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2264F025BF022C00A7F018 /* Controller */,
+				FA22650525BF1A6600A7F018 /* DBBaseViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +202,7 @@
 		FA2264EE25BF021C00A7F018 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA22651325BF272000A7F018 /* DBMovies.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +210,8 @@
 		FA2264EF25BF022100A7F018 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FA22650A25BF203700A7F018 /* DBMoviesViewModel.swift */,
+				FA22651525BF2A6200A7F018 /* DBMoviesViewModelController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -165,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				FA2264F925BF087C00A7F018 /* Movies */,
-				FA2264F325BF025700A7F018 /* Login */,
 				FA2264F125BF023700A7F018 /* Main */,
 			);
 			path = Controller;
@@ -174,8 +228,8 @@
 		FA2264F125BF023700A7F018 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				FA2264BE25BF020300A7F018 /* ViewController.swift */,
-				FA2264C025BF020300A7F018 /* Main.storyboard */,
+				FA22651925BF2F0200A7F018 /* ViewController.swift */,
+				FA22651725BF2EFB00A7F018 /* Main.storyboard */,
 				FA2264C825BF020900A7F018 /* LaunchScreen.storyboard */,
 			);
 			path = Main;
@@ -189,22 +243,39 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		FA2264F325BF025700A7F018 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				FA2264F525BF02A900A7F018 /* DBLoginViewController.swift */,
-				FA2264F725BF03CB00A7F018 /* DBLoginViewController.storyboard */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		FA2264F925BF087C00A7F018 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				FA22651B25BF393900A7F018 /* Cells */,
+				FA22650725BF1E4000A7F018 /* DBMovieDetailCollectionViewController.swift */,
 				FA2264FC25BF090700A7F018 /* DBMoviesTableViewController.swift */,
 				FA2264FE25BF091E00A7F018 /* DBMoviesTableViewController.storyboard */,
 			);
 			path = Movies;
+			sourceTree = "<group>";
+		};
+		FA22650925BF1FDB00A7F018 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FA22650E25BF207300A7F018 /* NetWorking */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		FA22650E25BF207300A7F018 /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				FA22650C25BF206E00A7F018 /* DBWebService.swift */,
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		FA22651B25BF393900A7F018 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA22651C25BF395400A7F018 /* DBMovieTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA2264E425BF020900A7F018 /* Build configuration list for PBXNativeTarget "Indra" */;
 			buildPhases = (
+				280B63B8558DED6958679FB0 /* [CP] Check Pods Manifest.lock */,
 				FA2264B325BF020300A7F018 /* Sources */,
 				FA2264B425BF020300A7F018 /* Frameworks */,
 				FA2264B525BF020300A7F018 /* Resources */,
+				649379416B7ACFDE409E4A5D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA2264E725BF020900A7F018 /* Build configuration list for PBXNativeTarget "IndraTests" */;
 			buildPhases = (
+				3B59B6151DE90DF6B7E5047C /* [CP] Check Pods Manifest.lock */,
 				FA2264CC25BF020900A7F018 /* Sources */,
 				FA2264CD25BF020900A7F018 /* Frameworks */,
 				FA2264CE25BF020900A7F018 /* Resources */,
@@ -249,9 +323,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA2264EA25BF020900A7F018 /* Build configuration list for PBXNativeTarget "IndraUITests" */;
 			buildPhases = (
+				F0A42B1A06D75291FD98C70C /* [CP] Check Pods Manifest.lock */,
 				FA2264D725BF020900A7F018 /* Sources */,
 				FA2264D825BF020900A7F018 /* Frameworks */,
 				FA2264D925BF020900A7F018 /* Resources */,
+				5E3DB2ABE80280CB7F10AC6E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,9 +389,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2264CA25BF020900A7F018 /* LaunchScreen.storyboard in Resources */,
+				FA22651825BF2EFC00A7F018 /* Main.storyboard in Resources */,
 				FA2264C725BF020900A7F018 /* Assets.xcassets in Resources */,
-				FA2264F825BF03CB00A7F018 /* DBLoginViewController.storyboard in Resources */,
-				FA2264C225BF020300A7F018 /* Main.storyboard in Resources */,
 				FA2264FF25BF091E00A7F018 /* DBMoviesTableViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,17 +411,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		280B63B8558DED6958679FB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Indra-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B59B6151DE90DF6B7E5047C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IndraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E3DB2ABE80280CB7F10AC6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Indra-IndraUITests/Pods-Indra-IndraUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Indra-IndraUITests/Pods-Indra-IndraUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Indra-IndraUITests/Pods-Indra-IndraUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		649379416B7ACFDE409E4A5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Indra/Pods-Indra-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Indra/Pods-Indra-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Indra/Pods-Indra-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0A42B1A06D75291FD98C70C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Indra-IndraUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA2264B325BF020300A7F018 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FA2264C525BF020400A7F018 /* Indra.xcdatamodeld in Sources */,
-				FA2264BF25BF020300A7F018 /* ViewController.swift in Sources */,
+				FA22650B25BF203700A7F018 /* DBMoviesViewModel.swift in Sources */,
+				FA22650625BF1A6600A7F018 /* DBBaseViewController.swift in Sources */,
+				FA22651625BF2A6200A7F018 /* DBMoviesViewModelController.swift in Sources */,
+				FA22650D25BF206E00A7F018 /* DBWebService.swift in Sources */,
 				FA2264BB25BF020300A7F018 /* AppDelegate.swift in Sources */,
-				FA2264F625BF02A900A7F018 /* DBLoginViewController.swift in Sources */,
+				FA22651A25BF2F0200A7F018 /* ViewController.swift in Sources */,
+				FA22651425BF272000A7F018 /* DBMovies.swift in Sources */,
 				FA2264FD25BF090700A7F018 /* DBMoviesTableViewController.swift in Sources */,
 				FA2264BD25BF020300A7F018 /* SceneDelegate.swift in Sources */,
+				FA22651D25BF395400A7F018 /* DBMovieTableViewCell.swift in Sources */,
+				FA22650825BF1E4000A7F018 /* DBMovieDetailCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,14 +566,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FA2264C025BF020300A7F018 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA2264C125BF020300A7F018 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA2264C825BF020900A7F018 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -517,6 +693,7 @@
 		};
 		FA2264E525BF020900A7F018 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2197D89CD9CA02EB55B483 /* Pods-Indra.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +711,7 @@
 		};
 		FA2264E625BF020900A7F018 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74AFAFC6391952CD6039956F /* Pods-Indra.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +729,7 @@
 		};
 		FA2264E825BF020900A7F018 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5BF4BCCC21B0BD22D3AF0F3 /* Pods-IndraTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -572,6 +751,7 @@
 		};
 		FA2264E925BF020900A7F018 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D2F212702DD14C1552A4F34 /* Pods-IndraTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -593,6 +773,7 @@
 		};
 		FA2264EB25BF020900A7F018 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93BBFB7B2AC5AF872BD10871 /* Pods-Indra-IndraUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -612,6 +793,7 @@
 		};
 		FA2264EC25BF020900A7F018 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A056B0147F8FDB0B93228824 /* Pods-Indra-IndraUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

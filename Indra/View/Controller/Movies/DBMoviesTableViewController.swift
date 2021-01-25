@@ -8,23 +8,46 @@
 
 import UIKit
 
-class DBMoviesTableViewController: UIViewController {
-
+class DBMoviesTableViewController: DBBaseViewController, UITableViewDataSource, UITableViewDelegate{
+    
+    var movieViewModelController : DBMoviesViewModelController!
+    
+    // MARK: - Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.movieViewModelController = DBMoviesViewModelController()
+        
+        loadData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Data
+    
+    private func loadData(){
+        self.movieViewModelController.getMovies(page: 1, completion: {
+            self.tableView.reloadData()
+        }) {
+            //error
+        }
     }
-    */
-
+    
+    // MARK: - TableViewDataSource
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150;
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        self.movieViewModelController.moviesViewModel.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let movie = self.movieViewModelController.moviesViewModel[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTVC", for: indexPath) as! DBMovieTableViewCell
+        cell.bindCellWithModel(model: movie)
+        return cell
+    }
+    
 }

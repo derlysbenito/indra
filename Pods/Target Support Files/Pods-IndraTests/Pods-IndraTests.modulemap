@@ -1,0 +1,6 @@
+framework module Pods_IndraTests {
+  umbrella header "Pods-IndraTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
