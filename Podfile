@@ -8,7 +8,6 @@ target 'Indra' do
   # Pods for Indra
 
 	pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git'
-  	pod 'IQKeyboardManagerSwift', :git => 'https://github.com/hackiftekhar/IQKeyboardManager' 
 	pod 'SDWebImage', :git => 'https://github.com/SDWebImage/SDWebImage'
 
 
