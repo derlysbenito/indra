@@ -41,6 +41,7 @@ class DBMoviesTableViewController: DBBaseViewController, UITableViewDataSource, 
             let movieSelected = self.movieViewModelController.moviesViewModel[index!.row]
             
             let dvc = segue.destination as! DBMovieDetailCollectionViewController
+            dvc.title = movieSelected.title
             dvc.movieSelected = movieSelected
         }
     }
