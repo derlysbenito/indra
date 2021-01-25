@@ -32,6 +32,19 @@ class DBMoviesTableViewController: DBBaseViewController, UITableViewDataSource, 
         }
     }
     
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "showDetailSID"{
+            let index = self.tableView.indexPath(for: sender as! UITableViewCell)
+            let movieSelected = self.movieViewModelController.moviesViewModel[index!.row]
+            
+            let dvc = segue.destination as! DBMovieDetailCollectionViewController
+            dvc.movieSelected = movieSelected
+        }
+    }
+    
     // MARK: - TableViewDataSource
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -43,6 +56,7 @@ class DBMoviesTableViewController: DBBaseViewController, UITableViewDataSource, 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let movie = self.movieViewModelController.moviesViewModel[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTVC", for: indexPath) as! DBMovieTableViewCell

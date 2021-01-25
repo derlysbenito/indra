@@ -62,7 +62,7 @@
                                         <connections>
                                             <outlet property="movieImage" destination="t7X-u3-dd2" id="Ltc-11-AAV"/>
                                             <outlet property="titleLabel" destination="d9f-Lc-E0Z" id="mPg-Qq-rzT"/>
-                                            <segue destination="YT0-PA-FiE" kind="show" id="ZoX-C8-Et8"/>
+                                            <segue destination="YT0-PA-FiE" kind="show" identifier="showDetailSID" id="ZoX-C8-Et8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -101,17 +101,17 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="x0U-JR-lRw">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8Fa-GC-vgI">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8Fa-GC-vgI">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Bal-uH-I8L">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" reuseIdentifier="MovieDetailCVC" id="Bal-uH-I8L" customClass="DBMovieDetailCollectionViewCell" customModule="Indra" customModuleProvider="target">
                                         <rect key="frame" x="7" y="0.0" width="400" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="X2f-o7-NeZ">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iUG-ZT-gH9">
                                             <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -121,25 +121,34 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avengers - Infinity Wars" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59h-h0-nQ4">
-                                                    <rect key="frame" x="10" y="61.666666666666664" width="380" height="20.333333333333336"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Avengers - Infinity Wars" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59h-h0-nQ4">
+                                                    <rect key="frame" x="10" y="50" width="380" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="59h-h0-nQ4" firstAttribute="leading" secondItem="X2f-o7-NeZ" secondAttribute="leading" constant="10" id="Lxo-gF-D5M"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="59h-h0-nQ4" secondAttribute="bottom" constant="10" id="X5m-BZ-gYH"/>
-                                                <constraint firstItem="fjI-Sg-DCR" firstAttribute="top" secondItem="X2f-o7-NeZ" secondAttribute="top" constant="10" id="YZx-k1-gSG"/>
-                                                <constraint firstItem="fjI-Sg-DCR" firstAttribute="leading" secondItem="X2f-o7-NeZ" secondAttribute="leading" constant="10" id="fDq-Iw-Tu1"/>
-                                                <constraint firstAttribute="trailing" secondItem="fjI-Sg-DCR" secondAttribute="trailing" constant="10" id="lWj-5A-jOc"/>
-                                                <constraint firstAttribute="trailing" secondItem="59h-h0-nQ4" secondAttribute="trailing" constant="10" id="mQY-wN-8VE"/>
+                                                <constraint firstItem="59h-h0-nQ4" firstAttribute="leading" secondItem="iUG-ZT-gH9" secondAttribute="leadingMargin" constant="2" id="HcB-yI-cQp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="59h-h0-nQ4" secondAttribute="trailing" constant="2" id="hBR-BW-KRV"/>
+                                                <constraint firstItem="59h-h0-nQ4" firstAttribute="top" secondItem="fjI-Sg-DCR" secondAttribute="bottom" constant="10" id="mi7-CX-3wO"/>
+                                                <constraint firstItem="fjI-Sg-DCR" firstAttribute="top" secondItem="iUG-ZT-gH9" secondAttribute="topMargin" constant="2" id="oUC-dv-caI"/>
+                                                <constraint firstItem="fjI-Sg-DCR" firstAttribute="leading" secondItem="iUG-ZT-gH9" secondAttribute="leadingMargin" constant="2" id="pMB-Zo-UCk"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="59h-h0-nQ4" secondAttribute="bottom" constant="2" id="sOo-1F-LpH"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fjI-Sg-DCR" secondAttribute="trailing" constant="2" id="vde-6V-L6x"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="400" height="100"/>
+                                        <connections>
+                                            <outlet property="detail" destination="59h-h0-nQ4" id="bDD-OJ-KSh"/>
+                                            <outlet property="title" destination="fjI-Sg-DCR" id="fCv-cQ-VXD"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="YT0-PA-FiE" id="jqN-AL-eSj"/>
+                                    <outlet property="delegate" destination="YT0-PA-FiE" id="fCL-OB-cdi"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
