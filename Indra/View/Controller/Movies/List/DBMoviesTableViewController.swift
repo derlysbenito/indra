@@ -25,7 +25,7 @@ class DBMoviesTableViewController: DBBaseViewController, UITableViewDataSource, 
     // MARK: - Data
     
     private func loadData(){
-        self.movieViewModelController.getMovies(page: 1, completion: {
+        self.movieViewModelController.getMovies(completion: {
             self.tableView.reloadData()
         }) {
             //error
@@ -63,6 +63,12 @@ class DBMoviesTableViewController: DBBaseViewController, UITableViewDataSource, 
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTVC", for: indexPath) as! DBMovieTableViewCell
         cell.bindCellWithModel(model: movie)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == self.movieViewModelController.moviesViewModel.count - 1 {
+            loadData()
+        }
     }
     
 }

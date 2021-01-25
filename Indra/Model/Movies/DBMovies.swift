@@ -24,11 +24,11 @@ struct DBMovies : Codable {
     
     struct DBMoviewResult : Codable {
         
-        let poster : String
-        let title : String
-        let note : Double
-        let date : String
-        let resume : String
+        let poster : String?
+        let title : String?
+        let note : Double?
+        let date : String?
+        let resume : String?
         
         enum CodingKeys : String, CodingKey {
             case poster = "poster_path"

@@ -17,11 +17,11 @@ struct DBMoviesViewModel {
     var resume : String
     
     init(model : DBMovies.DBMoviewResult) {
-        self.poster = "https://image.tmdb.org/t/p/w500/" + model.poster
-        self.title = model.title
-        self.note = model.note
-        self.date = model.date
-        self.resume = model.resume
+        self.poster = "https://image.tmdb.org/t/p/w500/" + (model.poster ?? "")
+        self.title = model.title ?? ""
+        self.note = model.note ?? 0
+        self.date = model.date ?? ""
+        self.resume = model.resume ?? ""
     }
     
 }

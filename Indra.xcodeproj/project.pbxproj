@@ -32,6 +32,7 @@
 		FA22652625BF44EE00A7F018 /* DBMovieDetailViewModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22652525BF44EE00A7F018 /* DBMovieDetailViewModelController.swift */; };
 		FA22652D25BF464600A7F018 /* DBItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22652C25BF464600A7F018 /* DBItem.swift */; };
 		FA22653225BF647D00A7F018 /* DBMovieDetailHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22653125BF647D00A7F018 /* DBMovieDetailHeaderCollectionReusableView.swift */; };
+		FA22653425BF6A4900A7F018 /* DBPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22653325BF6A4900A7F018 /* DBPagination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		FA22652525BF44EE00A7F018 /* DBMovieDetailViewModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMovieDetailViewModelController.swift; sourceTree = "<group>"; };
 		FA22652C25BF464600A7F018 /* DBItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBItem.swift; sourceTree = "<group>"; };
 		FA22653125BF647D00A7F018 /* DBMovieDetailHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMovieDetailHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		FA22653325BF6A4900A7F018 /* DBPagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBPagination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,8 +212,9 @@
 		FA2264EE25BF021C00A7F018 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FA22651325BF272000A7F018 /* DBMovies.swift */,
+				FA22653525BF6A4E00A7F018 /* Movies */,
 				FA22652C25BF464600A7F018 /* DBItem.swift */,
+				FA22653325BF6A4900A7F018 /* DBPagination.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -336,6 +339,14 @@
 				FA22653125BF647D00A7F018 /* DBMovieDetailHeaderCollectionReusableView.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		FA22653525BF6A4E00A7F018 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				FA22651325BF272000A7F018 /* DBMovies.swift */,
+			);
+			path = Movies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -587,6 +598,7 @@
 				FA22650D25BF206E00A7F018 /* DBWebService.swift in Sources */,
 				FA22653225BF647D00A7F018 /* DBMovieDetailHeaderCollectionReusableView.swift in Sources */,
 				FA2264BB25BF020300A7F018 /* AppDelegate.swift in Sources */,
+				FA22653425BF6A4900A7F018 /* DBPagination.swift in Sources */,
 				FA22651A25BF2F0200A7F018 /* ViewController.swift in Sources */,
 				FA22652625BF44EE00A7F018 /* DBMovieDetailViewModelController.swift in Sources */,
 				FA22652D25BF464600A7F018 /* DBItem.swift in Sources */,
